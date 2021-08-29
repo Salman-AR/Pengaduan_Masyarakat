@@ -11,7 +11,7 @@
         android:id="@+id/textView5"
         android:layout_width="277dp"
         android:layout_height="74dp"
-        android:text="Daftarkan Akun Anda Sekarang"
+        android:text="Selamat Datang, Ayo Login"
         android:textColor="#FFFFFF"
         android:textSize="28dp"
         android:textStyle="normal"
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginBottom="60dp"
-        android:text="Sudah Pernah Mendaftar?"
+        android:text="Belum Pernah Mendaftar?"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Sign Up"
+            android:text="Login"
             android:textColor="#000000" />
     </androidx.cardview.widget.CardView>
 
@@ -97,7 +97,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Nama"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#15417A"
@@ -111,64 +111,24 @@
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:hint="Email"
-        android:textColor="#15417A"
-        android:textColorHint="#15417A"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint="No. Telp"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColor="#15417A"
-        android:textColorHint="#15417A"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumberPassword"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint="NIK"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColor="#15417A"
-        android:textColorHint="#15417A"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/editTextNumberPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Password"
-        android:minHeight="48dp"
         android:textColor="#15417A"
         android:textColorHint="#15417A"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setuju Dengan Persyaratan Yang Ada"
+        android:textColor="#15417A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="369dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
